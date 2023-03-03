@@ -318,9 +318,9 @@ h3 {
 }
 
 .works_box {
-  width: 30%;
-  z-index: 1;
+  width: 100%;
 }
+
 .works_title1 {
   font-size: 17px;
   padding: 12px 0 3px 0;
@@ -543,7 +543,7 @@ h3 {
     display: block;
   }
 
-  .works_box img {
+  .works_box {
     width: 100%;
   }
 
