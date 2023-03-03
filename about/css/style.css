@@ -228,6 +228,10 @@
   .pc_only {
     display: none;
   }
+
+  main {
+    overflow: hidden;
+  }
   .concept_en,
   .like_en,
   .history_en {
