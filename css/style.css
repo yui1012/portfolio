@@ -543,7 +543,7 @@ h3 {
     display: block;
   }
 
-  .works_box {
+  .works_box img {
     width: 100%;
   }
 
@@ -642,8 +642,6 @@ h3 {
   /* 背景装飾 */
 
   .haikei01 img {
-    top: 1139px;
-    left: -35px;
     width: 55%;
   }
 
