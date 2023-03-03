@@ -8,6 +8,21 @@
 }
 .concept_title {
   margin-bottom: 80px;
+  animation: concept_title 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes concept_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .concept_title_en {
   font-family: "Hiragino Mincho ProN";
@@ -25,6 +40,21 @@
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  animation: concept_wrap 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes concept_wrap {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .concept_wrap p {
   font-size: 18px;

@@ -1,3 +1,13 @@
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .fv {
   max-width: 1600px;
   margin: 0 auto;
@@ -12,6 +22,23 @@
   margin-bottom: 80px;
 }
 
+.about_title {
+  animation: about_title 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes about_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .about_title_en {
   font-family: "Hiragino Mincho ProN";
   font-size: 165px;
@@ -30,7 +57,23 @@
   display: flex;
   max-width: 1200px;
   margin: 100px auto;
+  animation: about_wrap1 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
 }
+
+@keyframes about_wrap1 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .name_content {
   position: relative;
   width: 493px;
@@ -190,6 +233,10 @@
   .history_en {
     writing-mode: horizontal-tb;
     font-size: 16px;
+  }
+
+  .about_container {
+    min-width: 0;
   }
 
   .about_title h1 {

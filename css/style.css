@@ -150,6 +150,17 @@
 }
 
 /* メインビジュアル　スタート */
+
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .main {
   position: relative;
   overflow: hidden;
@@ -198,7 +209,23 @@
 
 .concept {
   width: 100%;
+  animation: concept 7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
 }
+
+@keyframes concept {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .concept p {
   text-align: center;
   font-family: "Hiragino Mincho ProN";
@@ -225,22 +252,6 @@
   overflow: hidden;
   text-align: center;
   position: relative;
-}
-.service_title {
-  animation: service_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-}
-@keyframes service_title {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .service_title_en {
@@ -283,23 +294,6 @@ h3 {
   text-align: center;
 }
 
-.works_title {
-  animation: works_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-}
-
-@keyframes works_title {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .works_title_en {
   font-family: "Hiragino Mincho ProN";
   font-size: 169px;
@@ -340,23 +334,6 @@ h3 {
   margin: 0 auto;
 }
 
-.about_title {
-  animation: about_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-}
-
-@keyframes about_title {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .about_title_en {
   text-align: center;
   font-family: "Hiragino Mincho ProN";

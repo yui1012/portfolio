@@ -96,7 +96,7 @@
             </div>
 
             <div class="about_wrap2">
-                <div class="like_content">
+                <div class="like_content scroll_up">
                     <div class="haikei3">
                         <picture>
                             <source srcset="images/sp_about_haikei02@2x.png" media="(max-width: 767px)">
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <div class="about_wrap3">
-                <div class="history_content">
+                <div class="history_content scroll_up">
                     <div class="haikei4">
                         <picture>
                             <source srcset="images/sp_about_haikei03@2x.png" media="(max-width: 767px)">
@@ -190,6 +190,24 @@
                 $('.pc_nav').fadeToggle();
             });
         });
+    </script>
+
+    <script>
+        //scroll_effect
+        $(window).scroll(function () {
+            var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+            var scrollAnimationFunc = function () {
+                for (var i = 0; i < scrollAnimationElm.length; i++) {
+                    var triggerMargin = 100;
+                    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+                        scrollAnimationElm[i].classList.add('on');
+                    }
+                }
+            }
+            window.addEventListener('load', scrollAnimationFunc);
+            window.addEventListener('scroll', scrollAnimationFunc);
+        });
+
     </script>
 </body>
 

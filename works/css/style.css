@@ -8,6 +8,21 @@
 }
 .works_title {
   margin-bottom: 80px;
+  animation: works_title 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes works_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .works_title_en {
   font-family: "Hiragino Mincho ProN";

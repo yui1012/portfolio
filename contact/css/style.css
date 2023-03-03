@@ -8,6 +8,21 @@
 }
 .contact_title {
   margin-bottom: 80px;
+  animation: contact_title 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes contact_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .contact_title_en {
   font-family: "Hiragino Mincho ProN";
@@ -24,6 +39,21 @@
 .contact_wrap {
   max-width: 1000px;
   margin: 0 auto;
+  animation: contact_wrap 5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes contact_wrap {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contact_text {

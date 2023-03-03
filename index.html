@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+
 </head>
 
 <body>
@@ -76,12 +77,12 @@
 
         <section class="service" id="service">
 
-            <div class="service_title">
+            <div class="service_title scroll_up">
                 <div class="service_title_en">service</div>
                 <h2>ご提供できること</h2>
             </div>
 
-            <ul class="service_wrap">
+            <ul class="service_wrap scroll_up">
                 <li>
                     <img src="images/service1.png" alt="マウスのアイコン">
                     <h3>ウェブサイトデザイン</h3>
@@ -108,13 +109,13 @@
                 </li>
             </ul>
         </section>
-        <section class="works">
+        <section class="works ">
 
-            <div class="works_title">
+            <div class="works_title scroll_up">
                 <div class="works_title_en">works</div>
                 <h2>制作実績</h2>
             </div>
-            <div class="works_wrap">
+            <div class="works_wrap scroll_up">
                 <div class="works_box">
                     <a href="images/gakuwari.jpg" data-lightbox="携帯バナー">
                         <img src="images/works01@2x-80.jpg" alt="モック１">
@@ -165,13 +166,13 @@
             </div>
         </section>
         <section class="about">
-            <div class="about_title">
+            <div class="about_title scroll_up">
                 <div class="about_title_en">about</div>
                 <h2>私について</h2>
             </div>
 
 
-            <div class="about_wrap">
+            <div class="about_wrap scroll_up">
                 <img src="images/about_kao.png" alt="顔写真">
 
                 <div class="about_inner">
@@ -208,12 +209,12 @@
         </section>
         <section class="contact">
             <div class="contact_wrap">
-                <div class="contact_text">
+                <div class="contact_text scroll_up">
                     <p>ご訪問いただき、ありがとうございます。<br>
                         ご依頼やご相談等、どんな事でもお気軽にお問い合わせください。
                     </p>
                 </div>
-                <div class="contact_title">
+                <div class="contact_title scroll_up">
                     <div class="contact_title_en">contact</div>
                     <h2>お問い合わせ</h2>
                 </div>
@@ -270,6 +271,24 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 
     <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        //scroll_effect
+        $(window).scroll(function () {
+            var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+            var scrollAnimationFunc = function () {
+                for (var i = 0; i < scrollAnimationElm.length; i++) {
+                    var triggerMargin = 100;
+                    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+                        scrollAnimationElm[i].classList.add('on');
+                    }
+                }
+            }
+            window.addEventListener('load', scrollAnimationFunc);
+            window.addEventListener('scroll', scrollAnimationFunc);
+        });
+
+    </script>
 </body>
 
 </html>
