@@ -1,0 +1,183 @@
+.fv {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_img img {
+  width: 100%;
+}
+.contact_title {
+  margin-bottom: 80px;
+}
+.contact_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 165px;
+  color: #c7b299;
+  margin-top: -100px;
+}
+.contact_title h1 {
+  font-size: 24px;
+  margin-top: -59px;
+  letter-spacing: 0.1rem;
+}
+
+.contact_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact_text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.contact_text p {
+  font-size: 17px;
+  line-height: 1.88;
+  padding: 50px 0;
+}
+
+/* ボタン */
+.toppage_btn {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 55px;
+}
+
+.toppage_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+/* コンタクトフォーム */
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+.form_item {
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.form_item_label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.form_item_label.ismsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.form_item_label_required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding: 5px 0;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #998675;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form_item_input {
+  border: 1px solid #998675;
+  border-radius: 6px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 45px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.form_item_textarea {
+  border: 1px solid #998675;
+  border-radius: 6px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 160px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 16px;
+}
+
+.form_btn {
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 170px;
+  display: block;
+  letter-spacing: 0.1rem;
+  background: #998675;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+sp_only {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+    margin: 0 auto;
+  }
+  .pc_only {
+    display: none;
+  }
+
+  .contact_title h1 {
+    font-size: 14px;
+    margin-top: -23px;
+  }
+  .contact_title_en {
+    font-size: 55px;
+    margin-top: -32px;
+  }
+  .contact_text p {
+    font-size: 13px;
+    line-height: 1.76;
+  }
+  .contact_title,
+  .contact_wrap {
+    margin: 0 50px;
+  }
+  .form_item {
+    padding-bottom: 20px;
+  }
+
+  .form_item_label {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  .form_item_input {
+    height: 40px;
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .form_item_textarea {
+    width: 90%;
+    font-size: 15px;
+  }
+  .form_item_label_required {
+    padding: 3px 0;
+    width: 42px;
+    font-size: 12px;
+  }
+
+  .form_btn {
+    padding: 3px 0;
+    width: 136px;
+
+    font-size: 15px;
+  }
+}

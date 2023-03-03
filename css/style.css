@@ -1,0 +1,672 @@
+/* スクロールダウン */
+.scroll {
+  color: #534741;
+  font-size: 13px;
+  writing-mode: vertical-rl;
+  position: absolute;
+  bottom: 117px;
+  right: 50px;
+}
+.scroll::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: -120px;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100px;
+  background-color: #534741;
+}
+
+.scroll::after {
+  animation: scroll 3s cubic-bezier(1, 0, 0, 1) infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+
+/* 背景装飾 */
+
+.haikei01 {
+  position: absolute;
+  top: 1380px;
+  left: -40px;
+  animation: haikei01 9s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 100%;
+  margin-top: 15px;
+}
+@keyframes haikei01 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+.haikei02 img {
+  position: absolute;
+  top: 1000px;
+  right: 0px;
+  animation: haikei02 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 17%;
+  margin-top: 15px;
+}
+@keyframes haikei02 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+.haikei03 img {
+  position: absolute;
+  top: 1820px;
+  right: 0;
+  animation: haikei03 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 20%;
+  margin-top: 15px;
+}
+@keyframes haikei03 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+.haikei04 img {
+  position: absolute;
+  top: 2900px;
+  left: -20px;
+  animation: haikei04 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 20%;
+  margin-top: 15px;
+}
+@keyframes haikei04 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+.haikei05 img {
+  position: absolute;
+  top: 2721px;
+  right: 77px;
+  animation: haikei05 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 20%;
+  margin-top: 15px;
+}
+@keyframes haikei05 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+
+/* メインビジュアル　スタート */
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.main_visual {
+  text-align: center;
+  position: relative;
+}
+.main_visual img {
+  max-width: 88%;
+}
+.main_text p {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+
+.main_text {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  animation: main_text 7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+@keyframes main_text {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.main_text :nth-child(1) {
+  font-size: 57px;
+}
+.main_text :nth-child(2) {
+  font-size: 21px;
+  line-height: 1.9;
+  margin: 10px 130px 0 0;
+}
+
+.concept {
+  width: 100%;
+}
+.concept p {
+  text-align: center;
+  font-family: "Hiragino Mincho ProN";
+  font-size: 20px;
+  line-height: 2.1;
+  margin: 132px 0 54px 0;
+  letter-spacing: 0.1em;
+}
+.concept_btn {
+  text-align: center;
+  margin-bottom: 169px;
+}
+
+.about_btn a {
+  width: 142px;
+  height: 42px;
+}
+
+.concept_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+.service {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.service_title {
+  animation: service_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+@keyframes service_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #e9e0d6;
+}
+
+.service_title h2 {
+  margin-top: -50px;
+  z-index: 1;
+}
+.service_wrap {
+  display: flex;
+  max-width: 1000px;
+  margin: 70px auto 0;
+}
+.service_wrap li {
+  width: 30%;
+  margin: 0 auto;
+}
+.service_wrap img {
+  padding-bottom: 26px;
+}
+
+h3 {
+  padding-bottom: 3px;
+}
+.service_title2 {
+  font-size: 13px;
+  padding-bottom: 26px;
+}
+.service_text {
+  text-align: justify;
+  line-height: 1.73;
+}
+.works {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works_title {
+  animation: works_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes works_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.works_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #e9e0d6;
+  margin-top: 154px;
+}
+.works_title h2 {
+  margin-top: -50px;
+  padding-bottom: 112px;
+}
+.works_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  flex-wrap: wrap;
+}
+
+.works_box {
+  width: 30%;
+  z-index: 1;
+}
+.works_title1 {
+  font-size: 17px;
+  padding: 12px 0 3px 0;
+}
+.works_title2 {
+  font-size: 13px;
+  padding-bottom: 65px;
+}
+
+.works_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+.about {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about_title {
+  animation: about_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes about_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about_title_en {
+  text-align: center;
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #e9e0d6;
+  margin-top: 165px;
+}
+.about_title h2 {
+  text-align: center;
+  margin: -50px 0 143px 0;
+}
+.about_wrap {
+  display: flex;
+  justify-content: center;
+  padding: 40px 50px 0 0;
+}
+.name_content {
+  display: flex;
+  letter-spacing: 0.1rem;
+}
+.name {
+  font-family: "Toppan Bunkyu Gothic";
+  font-size: 24px;
+  border-right: 2px solid #534741;
+  padding: 0 30px 0 0;
+  align-items: center;
+}
+.name_designer {
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  font-size: 12px;
+  padding: 0 30px;
+}
+
+.about_wrap img {
+  width: 25%;
+  height: 25%;
+  z-index: 1;
+  padding: 5% 4% 0 0;
+}
+
+.about_inner {
+  padding-left: 20px;
+}
+
+.profile1 {
+  font-size: 18px;
+  line-height: 1.75;
+  padding-top: 25px;
+}
+.favorite {
+  font-size: 22px;
+  letter-spacing: 0.1rem;
+  padding-top: 26px;
+}
+.profile2 {
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  padding-top: 12px;
+  line-height: 1.75;
+}
+
+.about_haikei {
+  position: absolute;
+  top: 265px;
+  left: 190px;
+}
+
+.about_btn {
+  max-width: 1000px;
+  text-align: end;
+  margin: 60px 220px 100px 0;
+}
+
+.about_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+.contact {
+  text-align: center;
+}
+.contact_wrap {
+  padding: 50px 0;
+  background-image: url(../images/contact_haikei@2x-80.jpg);
+  background-size: cover;
+}
+.contact_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #d5c5b2;
+}
+
+.contact_title h2 {
+  margin: -50px 0 50px 0;
+}
+.contact_text p {
+  font-size: 18px;
+  line-height: 1.83;
+}
+
+.contact_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+/* SP版 始まり */
+.sp_only {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+    margin: 0 auto;
+  }
+  .pc_only {
+    display: none;
+  }
+
+  .scroll {
+    top: 472px;
+    right: 30px;
+    z-index: 1;
+  }
+
+  .main_text :nth-child(1) {
+    font-size: 24px;
+  }
+  .main_text :nth-child(2) {
+    font-size: 15px;
+    line-height: 1.44;
+    margin: 15px 0px 0 15px;
+  }
+
+  .concept p {
+    font-size: 15px;
+    line-height: 2;
+    margin: 50px 0 30px 0;
+  }
+
+  .service_title h2 {
+    margin: -30px 0 30px 0;
+    font-size: 15px;
+  }
+
+  .service_title_en {
+    font-size: 75px;
+  }
+
+  .service_wrap {
+    display: block;
+    margin: 0 10px;
+  }
+
+  .service_wrap li {
+    padding-top: 70px;
+    width: 90%;
+  }
+
+  .service_wrap img {
+    width: 40%;
+  }
+
+  .service_wrap h3 {
+    font-size: 15px;
+  }
+  .service_title2 {
+    font-size: 12px;
+  }
+
+  .service_text {
+    font-size: 15px;
+  }
+
+  .works_title h2 {
+    margin: -30px 0 30px 0;
+    font-size: 15px;
+    padding-bottom: 70px;
+  }
+
+  .works_title_en {
+    font-size: 75px;
+  }
+
+  .works_wrap {
+    display: block;
+  }
+
+  .works_box {
+    width: 100%;
+  }
+
+  .works_title1 {
+    font-family: 15px;
+  }
+
+  .works_title2 {
+    font-size: 12px;
+    color: #c7b299;
+  }
+
+  .about_title h2 {
+    margin: -30px 0 80px 0;
+    font-size: 15px;
+  }
+
+  .about_title_en {
+    font-size: 75px;
+  }
+  .about_haikei {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+  }
+  .about_inner {
+    padding: 0;
+  }
+
+  .about_wrap {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .about_wrap img {
+    width: 35%;
+    padding: 0;
+  }
+  .name_content {
+    display: block;
+    width: 37%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 18px;
+    border-bottom: 2px solid #534741;
+    border-right: none;
+    padding: 20px 0 10px 0;
+    text-align: start;
+  }
+  .name_designer {
+    padding: 7px 0 0 0;
+    text-align: start;
+  }
+
+  .profile {
+    text-align: start;
+    padding: 7px 53px 0 66px;
+  }
+  .profile1 {
+    font-size: 15px;
+    line-height: 1.86;
+    padding-top: 25px;
+  }
+  .favorite {
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    padding-top: 26px;
+  }
+  .profile2 {
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    padding-top: 12px;
+    line-height: 1.74;
+  }
+
+  .about_btn {
+    text-align: center;
+    margin: 60px 0 100px 0;
+  }
+  .contact_title h2 {
+    margin: -30px 0 30px 0;
+    font-size: 15px;
+  }
+
+  .contact_title_en {
+    font-size: 75px;
+  }
+
+  .contact_text p {
+    font-size: 15px;
+    line-height: 1.53;
+  }
+
+  /* 背景装飾 */
+
+  .haikei01 img {
+    top: 1139px;
+    left: -35px;
+    width: 55%;
+  }
+
+  .haikei02 img {
+    top: 550px;
+    right: 0px;
+    width: 40%;
+  }
+
+  .haikei03 img {
+    width: 55%;
+    top: 1700px;
+  }
+
+  .haikei04 img {
+    top: 4714px;
+    left: -50px;
+    width: 55%;
+  }
+
+  .haikei05 img {
+    top: 2240px;
+    left: 0;
+    width: 40%;
+  }
+}

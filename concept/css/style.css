@@ -1,0 +1,77 @@
+.fv {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_img img {
+  width: 100%;
+}
+.concept_title {
+  margin-bottom: 80px;
+}
+.concept_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 165px;
+  color: #c7b299;
+  margin-top: -100px;
+}
+.concept_title h1 {
+  font-size: 24px;
+  margin-top: -59px;
+  letter-spacing: 0.1rem;
+}
+
+.concept_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.concept_wrap p {
+  font-size: 18px;
+  line-height: 2.44;
+  padding-bottom: 100px;
+}
+.logo_img {
+  padding-bottom: 65px;
+}
+
+.toppage_btn {
+  padding-bottom: 55px;
+}
+.toppage_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+sp_only {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+    margin: 0 auto;
+  }
+  .pc_only {
+    display: none;
+  }
+
+  .concept_title h1 {
+    font-size: 14px;
+    margin-top: -23px;
+  }
+  .concept_title_en {
+    font-size: 55px;
+    margin-top: -32px;
+  }
+
+  .logo_img img {
+    width: 50%;
+  }
+
+  .concept_wrap p {
+    font-size: 15px;
+    text-align: start;
+    line-height: 2.4;
+    margin: 0 25px;
+  }
+}

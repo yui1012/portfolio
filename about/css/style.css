@@ -1,0 +1,329 @@
+.fv {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_img img {
+  width: 100%;
+}
+
+.concept_title {
+  margin-bottom: 80px;
+}
+
+.about_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 165px;
+  color: #c7b299;
+  margin-top: -100px;
+}
+
+.about_title h1 {
+  margin-top: -59px;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+/* 顔写真コンテンツ */
+.about_wrap1 {
+  display: flex;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.name_content {
+  position: relative;
+  width: 493px;
+}
+.haikei1 {
+  position: absolute;
+  top: 38px;
+  left: 8px;
+  width: 460px;
+}
+
+.about_name {
+  width: 242px;
+  position: absolute;
+  top: 10px;
+  right: 62px;
+}
+
+.about_name img {
+  width: 100%;
+}
+
+.name {
+  width: 85%;
+  font-family: "Toppan Bunkyu Gothic";
+  font-size: 26px;
+  padding: 10px 10px;
+  letter-spacing: 0.1rem;
+  border-bottom: solid 2px #534741;
+}
+
+.designer {
+  padding: 10px;
+}
+
+.designer p {
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  z-index: 1;
+}
+
+/* コンセプトのコンテンツ */
+
+.concept_content {
+  position: relative;
+}
+
+.concept_inner {
+  display: flex;
+  position: absolute;
+  top: 175px;
+  left: 57px;
+}
+
+.concept_text p {
+  font-size: 17px;
+  line-height: 2;
+}
+
+.concept_text span {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 25px;
+}
+
+.concept_en {
+  writing-mode: vertical-rl;
+  font-size: 27px;
+  color: #afa497;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  padding: 130px 71px 0 0;
+}
+
+/* Likeのコンテンツ */
+
+.about_wrap2 {
+  padding-left: 100px;
+  position: relative;
+}
+
+.like_inner {
+  position: absolute;
+  top: 45px;
+  left: 178px;
+}
+
+.like_en {
+  writing-mode: vertical-rl;
+  font-size: 27px;
+  color: #ffb0cd;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+}
+.like_text p {
+  font-size: 17px;
+  line-height: 2;
+  padding: 45px 0 0 30px;
+}
+
+/* historyのコンテンツ */
+
+.about_wrap3 {
+  padding-right: 100px;
+  position: relative;
+}
+
+.haikei4 {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+.history_inner {
+  display: flex;
+  position: absolute;
+  top: 154px;
+  right: 182px;
+}
+
+.history_en {
+  writing-mode: vertical-rl;
+  font-size: 27px;
+  color: #9daf97;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  padding: 30px 110px 0 0;
+}
+.history_text p {
+  font-size: 17px;
+  line-height: 2;
+}
+
+/* ボタン */
+
+.toppage_btn {
+  text-align: center;
+  margin: 606px 0 55px 0;
+}
+
+.toppage_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+.sp_only {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+    margin: 0 auto;
+  }
+  .pc_only {
+    display: none;
+  }
+  .concept_en,
+  .like_en,
+  .history_en {
+    writing-mode: horizontal-tb;
+    font-size: 16px;
+  }
+
+  .about_title h1 {
+    font-size: 14px;
+    margin-top: -23px;
+  }
+
+  .about_title_en {
+    font-size: 55px;
+    margin-top: -32px;
+  }
+
+  /* 名前のコンテンツ */
+
+  .about_wrap1 {
+    display: block;
+  }
+
+  .haikei1 {
+    position: absolute;
+    top: 38px;
+    left: 19px;
+    width: 52%;
+  }
+
+  .about_name {
+    width: 161px;
+    position: relative;
+    top: -19px;
+    left: 81px;
+    margin-bottom: 200px;
+  }
+
+  .about_name img {
+    width: 70%;
+    padding: 0 0 10px 14px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .designer p {
+    font-size: 12px;
+  }
+
+  /* コンセプト */
+
+  .concept_text span {
+    font-size: 20px;
+  }
+
+  .concept_inner {
+    display: block;
+    position: sticky;
+    margin-top: 200px;
+    width: 27%;
+    padding: 51px 0 0 0px;
+    z-index: 100;
+  }
+
+  .concept_en {
+    padding: 0 0 67px 214px;
+  }
+
+  .concept_text p {
+    font-size: 15px;
+    line-height: 1.93;
+  }
+
+  .haikei2 {
+    position: absolute;
+    top: 0px;
+    left: -29px;
+    width: 37%;
+  }
+
+  /* like */
+  .about_wrap2 {
+    padding: 0;
+  }
+
+  .haikei3 {
+    position: absolute;
+    top: 103px;
+    left: -4px;
+    width: 37%;
+  }
+
+  .like_text p {
+    font-size: 15px;
+    line-height: 1.93;
+  }
+
+  .like_inner {
+    width: 27%;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 159px 0 0 10px;
+  }
+
+  /* history */
+  .about_wrap3 {
+    padding: 0;
+  }
+
+  .haikei4 {
+    position: absolute;
+    top: 200px;
+    left: -11px;
+    width: 37%;
+  }
+
+  .history_inner {
+    display: block;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 27%;
+    padding: 253px 0 0 30px;
+  }
+
+  .history_text p {
+    font-size: 15px;
+    line-height: 1.93;
+  }
+
+  .history_en {
+    padding: 32px 0 91px 225px;
+  }
+
+  .toppage_btn {
+    margin: 300px 0 55px 0;
+  }
+}

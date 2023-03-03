@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact｜y.design</title>
+    <meta name="description" content="ご依頼やご相談hはこちらからお問い合わせください。">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="header_logo"><a href="../index.html">
+                    <img src="images/logo1.png" alt="横長のy.design"></a>
+            </div>
+            <div class="hamburger">
+                <nav class="pc_nav" style="display: none;">
+                    <ul>
+                        <li><a href="../index.html" class="nav_hover">home</a></li>
+                        <li><a href="../concept/index.html" class="nav_hover">concept</a></li>
+                        <li><a href="../index.html#service" class="nav_hover">service</a></li>
+                        <li><a href="../works/index.html" class="nav_hover">works</a></li>
+                        <li><a href="../about/index.html" class="nav_hover">about</a></li>
+                        <li><a href="index.html" class="nav_hover">contact</a></li>
+                        <li><a href="https://www.instagram.com/yui.n_12/" class="nav_hover"><img src="images/insta2.png"
+                                    alt="Instagramアイコン2"></a></li>
+                    </ul>
+                </nav>
+                <div class="pc_btn"><span></span></div>
+            </div>
+        </div>
+        <div class="sns">
+            <a href="https://www.instagram.com/yui.n_12/">
+                <img src="images/instagramlogo.png" alt="Instagramアイコン">
+            </a>
+        </div>
+
+    </header>
+    <main>
+        <div class="fv">
+            <div class="main_img">
+                <img src="images/main@2x-80.jpg" alt="石の背景">
+            </div>
+            <div class="contact_title">
+                <div class="contact_title_en">contact</div>
+                <h1>お問い合わせ</h1>
+            </div>
+        </div>
+        <div class="contact_wrap">
+            <div class="contact_text">
+                <p>ご訪問いただき、ありがとうございます。<br>
+                    ご依頼やご相談、ご不明な点等ございましたらお気軽にご連絡ください。 <br>
+                    3営業日以内に返信させていただきます。
+                </p>
+            </div>
+
+            <form class="form"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxgSRbOO5mUmFjk67l6WeEuUjSYerRd_SfZGejPN0zktJ-qw/formResponse">
+
+                <div class="form_item">
+                    <p class="form_item_label"><span class="form_item_label_required">必須</span>氏名</p>
+                    <input type="text" name="entry.1012114783" class="form_item_input" placeholder="例）山田太郎" required>
+                </div>
+
+                <div class="form_item">
+                    <p class="form_item_label"><span class="form_item_label_required">必須</span>メールアドレス</p>
+                    <input type="email" name="entry.595254208" class="form_item_input" placeholder="例）example@gmail.com"
+                        required>
+                </div>
+                <div class="form_item">
+                    <p class="form_item_label ismsg"><span class="form_item_label_required">必須</span>お問い合わせ内容</p>
+                    <textarea class="form_item_textarea" required></textarea>
+                </div>
+                <input type="submit" name="entry.1887086775" class="form_btn" value="送信する">
+            </form>
+
+
+            <div class="toppage_btn">
+                <a href="../index.html">
+                    <img src="images/toppage_btn.png" alt="トップボタン">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <nav class="footer_nav pc_only">
+                <ul>
+                    <li>
+                        <a href="../index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="../concept/index.html">concept</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#service">service</a>
+                    </li>
+                    <li>
+                        <a href="../works/index.html">works</a>
+                    </li>
+                    <li>
+                        <a href="../about/index.html">about</a>
+                    </li>
+                    <li>
+                        <a href="index.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer_logo"><a href="../index.html">
+                    <img src="images/logo2.png" alt="縦型ロゴ"></a>
+            </div>
+        </div>
+        <div class="copylight">©︎ 2023 y.design </div>
+    </footer>
+    <script>
+        $(function () {
+            $('.pc_btn').on('click', function () {
+                $('.pc_btn').toggleClass('open');
+                $('.pc_nav').fadeToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

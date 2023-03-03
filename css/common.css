@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+html,
+body,
+main,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
+  color: #534741;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+
+header main {
+  background-color: #fafaf9;
+}
+.sns {
+  position: fixed;
+  right: 25px;
+  top: 90px;
+  z-index: 1;
+}
+
+.header_wrap {
+  display: flex;
+  max-width: 1400px;
+  justify-content: space-between;
+}
+.header_logo {
+  padding: 30px 120px;
+}
+/* バンバーガー */
+
+.pc_btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: block;
+  height: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+.pc_btn span {
+  position: relative;
+  top: 10px;
+  display: block;
+  width: 42px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #998675;
+  transition: 0.3s;
+}
+.pc_btn span::before,
+.pc_btn span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #998675;
+  transition: 0.3s;
+}
+.pc_btn span::before {
+  bottom: 10px;
+}
+.pc_btn span::after {
+  top: 10px;
+}
+
+/* バンバーガー閉じる */
+.pc_btn.open span {
+  background: transparent;
+}
+.pc_btn.open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+.pc_btn.open span::after {
+  top: 0;
+  transform: rotate(135deg);
+  background-color: #fff;
+}
+
+/* ハンバーガーメニュー */
+.pc_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(102, 102, 102, 0.8);
+  z-index: 1;
+}
+
+.pc_nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.pc_nav ul li {
+  padding: 35px;
+  color: #fff;
+  font-size: 26px;
+  letter-spacing: 0.3rem;
+  font-family: "Hiragino Mincho ProN";
+}
+
+.nav_hover {
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(90deg, #fff, #fff);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 1px;
+  transition: background-size 0.5s;
+  padding-bottom: 8px;
+}
+
+.nav_hover:hover {
+  background-size: 100% 1px;
+}
+
+/* フッター*/
+footer {
+  background-color: #cfc9bf;
+  padding-top: 50px;
+}
+.footer_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #4d4d4d;
+  align-items: center;
+}
+.footer_nav ul li {
+  padding: 0 20px;
+  border-right: 1px solid #4d4d4d;
+}
+.footer_nav ul li:last-child {
+  border-right: none;
+}
+.footer_logo {
+  padding: 0 30px;
+}
+.copylight {
+  max-width: 1000px;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  font-size: 9px;
+  color: #4d4d4d;
+  text-align: end;
+  margin: 0 auto;
+  padding: 0 100px 35px 0;
+  justify-content: space-around;
+}
+.sp_only {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc_only {
+    display: none;
+  }
+
+  .header_logo {
+    padding: 15px 30px;
+  }
+  .header_logo img {
+    width: 50%;
+  }
+
+  .pc_btn span {
+    width: 27px;
+    height: 2px;
+  }
+
+  .pc_btn span::before,
+  .pc_btn span::after {
+    width: 27px;
+    height: 2px;
+  }
+  .pc_btn span::before {
+    bottom: 8px;
+  }
+  .pc_btn span::after {
+    top: 8px;
+  }
+
+  .sns {
+    position: fixed;
+    right: 11px;
+    top: 85px;
+  }
+  .sns img {
+    width: 80%;
+  }
+
+  /* フッター */
+  .footer {
+    padding-top: 25px;
+  }
+
+  .footer_logo {
+    margin: 0 auto;
+  }
+
+  .copylight {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+}
