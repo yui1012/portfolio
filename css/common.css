@@ -215,6 +215,11 @@ footer {
     height: 2px;
   }
 
+  .pc_nav ul li {
+    padding: 20px;
+    font-size: 18px;
+  }
+
   .pc_btn span::before,
   .pc_btn span::after {
     width: 27px;

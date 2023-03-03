@@ -130,11 +130,11 @@
 .haikei05 img {
   position: absolute;
   top: 2721px;
-  right: 77px;
+  right: 40px;
   animation: haikei05 8s infinite ease-in-out 0.8s alternate;
   display: inline-block;
   transition: 1.5s ease-in-out;
-  width: 20%;
+  width: 17%;
   margin-top: 15px;
 }
 @keyframes haikei05 {
