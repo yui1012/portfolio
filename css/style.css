@@ -1,3 +1,8 @@
+body,
+main {
+  overflow-x: hidden;
+}
+
 /* スクロールダウン */
 .scroll {
   color: #534741;
@@ -149,6 +154,35 @@
   }
 }
 
+/* ホバー */
+figure.hover-parent {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+figcaption.hover-mask {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+figure.hover-parent:hover .hover-mask {
+  opacity: 1;
+  transition: all 0.6s ease;
+  transform: scale(1.2);
+}
 /* メインビジュアル　スタート */
 
 .scroll_up {
@@ -245,6 +279,7 @@
 }
 
 .concept_btn img {
+  width: 140px;
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 
@@ -325,6 +360,7 @@ h3 {
 }
 
 .works_btn img {
+  width: 140px;
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 
@@ -408,6 +444,7 @@ h3 {
 }
 
 .about_btn img {
+  width: 140px;
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 
@@ -434,6 +471,7 @@ h3 {
 }
 
 .contact_btn img {
+  width: 140px;
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 
@@ -525,7 +563,7 @@ h3 {
   }
 
   .works_title1 {
-    font-family: 15px;
+    font-size: 15px;
   }
 
   .works_title2 {

@@ -184,6 +184,11 @@ footer {
 .footer_logo {
   padding: 0 30px;
 }
+
+.footer_logo img {
+  width: 120px;
+}
+
 .copylight {
   max-width: 1000px;
   font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
