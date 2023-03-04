@@ -68,7 +68,7 @@
   position: absolute;
   top: 1000px;
   right: 0px;
-  animation: haikei02 8s infinite ease-in-out 0.8s alternate;
+  animation: haikei02 4s infinite ease-in-out 0.8s alternate;
   display: inline-block;
   transition: 1.5s ease-in-out;
   width: 17%;
@@ -89,7 +89,7 @@
   position: absolute;
   top: 1820px;
   right: 0;
-  animation: haikei03 8s infinite ease-in-out 0.8s alternate;
+  animation: haikei03 4s infinite ease-in-out 0.8s alternate;
   display: inline-block;
   transition: 1.5s ease-in-out;
   width: 20%;
@@ -110,7 +110,7 @@
   position: absolute;
   top: 2900px;
   left: -20px;
-  animation: haikei04 8s infinite ease-in-out 0.8s alternate;
+  animation: haikei04 4s infinite ease-in-out 0.8s alternate;
   display: inline-block;
   transition: 1.5s ease-in-out;
   width: 20%;
@@ -131,7 +131,7 @@
   position: absolute;
   top: 2721px;
   right: 40px;
-  animation: haikei05 8s infinite ease-in-out 0.8s alternate;
+  animation: haikei05 4s infinite ease-in-out 0.8s alternate;
   display: inline-block;
   transition: 1.5s ease-in-out;
   width: 17%;
