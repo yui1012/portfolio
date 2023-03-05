@@ -215,7 +215,7 @@ figure.hover-parent:hover .hover-mask {
 
 .main_text {
   position: absolute;
-  top: 55%;
+  top: 63%;
   left: 15%;
   animation: main_text 7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
 }
@@ -309,6 +309,7 @@ figure.hover-parent:hover .hover-mask {
   margin: 0 auto;
 }
 .service_wrap img {
+  width: 50%;
   padding-bottom: 26px;
 }
 
